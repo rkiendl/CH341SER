@@ -1,4 +1,10 @@
 # ch341 linux serial driver
+
+## Change for raspberry
+change ASYNCB_INITIALIZED to tty_port_initialized
+
+tested on rpi4
+
 ## Description
 
 ​	USB serial driver for USB to UART chip ch340, ch341, etc. In fact Linux mainline kernels have built-in ch341 serial driver since kernel version 2.6.24. The location is: drivers/usb/serial/ch341.c, it's a pity that the built-in driver cannot be kept up to date. We suggest our customers use this driver.
